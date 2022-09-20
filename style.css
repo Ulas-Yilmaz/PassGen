@@ -142,3 +142,13 @@ input[type="range"]::-webkit-slider-thumb{
     cursor: pointer;
     border-radius: 50px;
 }
+
+@media only screen and (max-width: 575px){
+    .app{
+        width: 95%;
+    }
+
+    h1{
+        width: 95%;
+    }
+}
