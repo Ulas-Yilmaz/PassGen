@@ -1,0 +1,144 @@
+@charset "utf-8";
+
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+body {
+    font-family: "Rubik", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #0f0e17;
+    color: #fffffe;
+}
+
+h1{
+    width: 100%;
+    text-align: center;
+    color: #fffffe;
+    background-color: #ff8906;
+    border-radius: 5px;
+    width: 360px;
+    margin-bottom: 10px;
+}
+
+.app{
+    width: 360px;
+    border: 2px solid #fffffe;
+    border-radius: 5px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.app div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px ;
+}
+
+.app div input{
+    width: 100%;
+}
+
+.app div button{
+    padding: 12px;
+}
+
+#password{
+    font-size: 16px;
+    font-family: "Rubik", sans-serif;
+    font-weight: 500;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: #0f0e17;
+    border: 2px solid #fffffe;
+    color: #fffffe;
+}
+
+input[type="checkbox"]{
+    appearance: none;
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    background-color: #ff8906;
+    border-radius: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type="checkbox"]::after{
+    content: "\f00c";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    font-size: 14px;
+    color: #fffffe;
+    display: none;
+}
+
+input[type="checkbox"]:checked::after{
+    display: block;
+}
+
+label{
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+button{
+    background-color: #ff8906;
+    color: #fffffe;
+    font-size: 16px;
+    font-family: "Rubik", sans-serif;
+    font-weight: 500;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #fffffe;
+    color: #ff8906;
+}
+
+input[type="range"]{
+    appearance: none;
+    -webkit-appearance: none;
+    background-color: #fffffe;
+    border-radius: 5px;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 50px;
+}
+
+input[type="range"]::-webkit-slider-thumb{
+    appearance: none;
+    -webkit-appearance: none;
+    width: 15px;
+    height: 15px;
+    background-color: #ff8906;
+    cursor: pointer;
+    border-radius: 50px;
+}
