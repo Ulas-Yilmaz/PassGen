@@ -21,9 +21,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background: url(bg.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: #232323;
     color: #fffffe;
 }
 
